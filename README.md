@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini AA Farcaster
 
-## Getting Started
+Mini AA Farcaster is a Next.js application that demonstrates a proof of concept for decentralized applications (dApps) built on the Farcaster protocol with the power of account abstraction.
 
-First, run the development server:
+In this implementation two smart contracts are built to simulate the Farcaster Protocol - an implementation to register and create FID and FNAME's for new users. The implementations can be seen below: 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ID Registry:
+https://mumbai.polygonscan.com/address/0x007ec325d80d64887281c453f641e6703ac6a3a9
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Storage Registry: 
+https://mumbai.polygonscan.com/address/0xf7ab9d9c856d35c17685e50029f60b93023fe21f
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+For demo purpses I launched on Polygon Mumbai as I had an abundant availability of Polygon Mumbai USDC to showcase the tipping feature in this demo. This can be launched on any of our supported networks including Optimism which is where the Farcaster Protcol lives. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features
+- Built with Next.js for a seamless developer and user experience.
+- Demonstrates the potential of dApps on the Farcaster protocol using account abstraction.
+- Shows how to use Session Keys for a tipping feature
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Note:
 
-## Learn More
+There are some todo's for the tipping feature - demo is currently hardcoded to send USDC to 1 address. 
 
-To learn more about Next.js, take a look at the following resources:
+## Prerequisites
+- Node.js v18
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup and Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+2. **Set up your environment variables:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - Rename the `.env.example` file to `.env`.
+   - Fill in the required environment variables in the `.env` file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   mv .env.example .env
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   yarn install
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   yarn dev
+   ```
+
+   The application should now be running on [http://localhost:3000](http://localhost:3000).
+

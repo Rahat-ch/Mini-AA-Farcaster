@@ -1,0 +1,63 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #2f3336;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  background-color: #15202b;
+  color: #e1e8ed;
+}
+
+.tweet {
+  padding: 15px 10px;
+  border-bottom: 1px solid #2f3336;
+}
+
+.tweet:last-child {
+  border-bottom: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.content {
+  margin-left: 10px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.tipButton {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1da1f2; /* Twitter Blue */
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tipButton:hover {
+  background-color: #0c84d2; /* Darker shade of Twitter Blue for hover effect */
+}
